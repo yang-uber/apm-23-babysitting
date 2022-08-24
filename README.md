@@ -6,13 +6,20 @@ This is a React boilerplate that contains a simple demo app which features Uber'
 
 2. Open a folder you want to code in using VSCode.
 
-3. ???
+3. Open a terminal in VSCode and execute the following commands:
 
-## Available Scripts
+4. `git clone https://github.com/Jeff-Uber/apm22-hackathon-boilerplate.git`
 
-In the project directory, you can run:
+5. `cd apm22-hackathon-boilerplate`
 
-### `npm start`
+6. `npm install` (this will take a bit)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+7. `npm start`
+
+8. Visit `http://localhost:3000/` and play around with the demo app.
+
+9. See documentation for [React](https://reactjs.org/), [Router](https://reactrouter.com/docs/en/v6), and [BaseUI](https://baseweb.design/).
+
+10. ???
+
+11. Profit
