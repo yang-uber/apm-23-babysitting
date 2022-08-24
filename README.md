@@ -16,7 +16,7 @@ This is a React boilerplate that contains a simple demo app which features Uber'
 
 7. `npm start`
 
-8. Visit `http://localhost:3000/` and play around with the demo app.
+8. Visit `http://localhost:3000/`. (In Chrome): Right click, click `Inspect`, and change dimensions to iPhone in inspector tool. The demo app is not designed to be viewed on desktop. Play around with it.
 
 9. See documentation for [React](https://reactjs.org/), [Router](https://reactrouter.com/docs/en/v6), and [BaseUI](https://baseweb.design/).
 
