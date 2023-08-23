@@ -8,7 +8,7 @@ This is a React boilerplate that contains a simple demo app which features Uber'
 
 3. Open a terminal in VSCode and execute the following commands:
 
-4. `git clone https://github.com/Jeff-Uber/apm22-hackathon-boilerplate.git`
+4. `git clone https://github.com/yang-uber/apm-23-babysitting.git`
 
 5. `cd apm22-hackathon-boilerplate`
 
