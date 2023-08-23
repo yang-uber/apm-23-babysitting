@@ -15,6 +15,10 @@ function Home() {
                     {/*make sure navigate param matches path defined in App.js*/}
                     Click me to go to new feature :)
                 </Button>
+                <Button size={SIZE.mini} onClick={() => { navigate(`/homescreen`) }}>
+                    {/*make sure navigate param matches path defined in App.js*/}
+                    Click me to go to the actual home screen
+                </Button>
             </MockScreenshot>
         </div>
     );

@@ -12,6 +12,7 @@ import {
 // import all pages
 import Home from './Pages/Home/Home.js';
 import NewFeature from './Pages/NewFeature/NewFeature.js';
+import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
 
 const engine = new Styletron();
 
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/newfeature" element={<NewFeature />} />
+              <Route path="/homescreen" element={<HomeScreen />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
