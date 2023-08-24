@@ -34,6 +34,9 @@ import RateTip from './Pages/RateTipScreen/RateTip';
 import LocationDetails from './Pages/LocationDetails/LocationDetails';
 import LocationSelect from './Pages/LocationSelect/LocationSelect';
 
+import ChildDetails2 from './Pages/ChildDetails_2/ChildDetails_2'
+import ChildDetails3 from './Pages/ChildDetails_3/ChildDetails_3'
+
 import NewFeature from './Pages/[DEPRECATED] NewFeature/NewFeature';
 
 const engine = new Styletron();
@@ -68,7 +71,8 @@ function App() {
               <Route path="/ratetip" element={<RateTip />} />
               <Route path="/locationDetails" element={<LocationDetails address={curAddress} setAddress={setCurAddress}/>}/>
               <Route path="/locationSelect" element={<LocationSelect address={curAddress} setAddress={setCurAddress}/>}/>
-
+              <Route path="/childdetails2" element={<ChildDetails2 />} />
+              <Route path="/childdetails3" element={<ChildDetails3 />} />
               <Route path="/newfeature" element={<NewFeature />} />
 
             </Routes>
