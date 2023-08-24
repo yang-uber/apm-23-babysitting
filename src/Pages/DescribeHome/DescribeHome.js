@@ -7,7 +7,7 @@ import HomeInput from './homeinput';
 function DescribeHome() {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/kids");
+        navigate("/childdetails");
     }
 
   return (

@@ -17,6 +17,7 @@ import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
 import DescribeHome from './Pages/DescribeHome/DescribeHome';
 import TCAgreed from './Pages/TCScreenAgreed/TCAgreed.js';
 import TCGeneral from './Pages/TCGeneral/TCGeneral.js';
+import ParticipantDetails from './Pages/ChildDetails/ChildDetails';
 
 const engine = new Styletron();
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/tcunagreed" element={<TCUnagreed />} />
               <Route path="/tcagreed" element={<TCAgreed />} />
               <Route path="/tcgeneral" element={<TCGeneral />} />
+              <Route path="/childdetails" element={<ParticipantDetails />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
