@@ -9,32 +9,32 @@ function FTUXPreludeScreen() {
     let navigate = useNavigate();
     return (
         <div className='Home page'>
-            <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
-                <Button onClick={() => { navigate(`/tcunagreed`) }} className='to-tcunagreed-button'
-                style={{
-                    width: '340px',
-                    height: '55px',
-                    position: 'absolute',
-                    top: '89%', /* Adjust the top value as needed */
-                    left: '5%', /* Adjust the left value as needed */
-                    backgroundColor: 'transparent', // Set your desired background color
-                }}>
-                    {/*make sure navigate param matches path defined in App.js*/}
-                </Button>     
+            <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${Image})`, backgroundSize: 'cover' }}>
+            </div>
+            <Button onClick={() => { navigate(`/tcunagreed`) }} className='to-tcunagreed-button'
+            style={{
+                width: '340px',
+                height: '55px',
+                position: 'absolute',
+                top: '89%', /* Adjust the top value as needed */
+                left: '5%', /* Adjust the left value as needed */
+                backgroundColor: 'transparent', // Set your desired background color
+            }}>
+                {/*make sure navigate param matches path defined in App.js*/}
+            </Button>     
 
-                <Button onClick={() => { navigate(`/`) }} className='back-button'
-                style={{
-                    width: '50px',
-                    height: '50px',
-                    position: 'absolute',
-                    top: '5%', /* Adjust the top value as needed */
-                    left: '2%', /* Adjust the left value as needed */
-                    backgroundColor: 'blue', // Set your desired background color
-                    opacity: '0%'
-                }}>
-                    {/*make sure navigate param matches path defined in App.js*/}
-                </Button>   
-            </MockScreenshot>
+            <Button onClick={() => { navigate(`/`) }} className='back-button'
+            style={{
+                width: '50px',
+                height: '50px',
+                position: 'absolute',
+                top: '5%', /* Adjust the top value as needed */
+                left: '2%', /* Adjust the left value as needed */
+                backgroundColor: 'blue', // Set your desired background color
+                opacity: '0%'
+            }}>
+                {/*make sure navigate param matches path defined in App.js*/}
+            </Button>   
         </div>
     );
 }
