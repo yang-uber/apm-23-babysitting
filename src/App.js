@@ -2,6 +2,7 @@ import './App.css';
 import { Client as Styletron } from 'styletron-engine-atomic';
 import { Provider as StyletronProvider } from 'styletron-react';
 import { LightTheme, BaseProvider } from 'baseui';
+import React, { useState } from 'react';
 
 import {
   BrowserRouter,
@@ -31,11 +32,12 @@ import Remaining15 from './Pages/Remaining15/Remaining15';
 import Remaining15b from './Pages/Remaining15b/Remaining15b';
 import RateTip from './Pages/RateTipScreen/RateTip';
 import LocationDetails from './Pages/LocationDetails/LocationDetails';
+import LocationSelect from './Pages/LocationSelect/LocationSelect';
 
 const engine = new Styletron();
-const curAddress = "1515 3rd St";
 
 function App() {
+  const [curAddress, setCurAddress] = useState("1515 3rd St");
   return (
     <>
       <StyletronProvider value={engine}>
@@ -62,7 +64,8 @@ function App() {
               <Route path="/remaining15" element={<Remaining15 />} />
               <Route path="/remaining15b" element={<Remaining15b />} />
               <Route path="/ratetip" element={<RateTip />} />
-              <Route path="/locationDetails" element={<LocationDetails address={curAddress}/>}/>
+              <Route path="/locationDetails" element={<LocationDetails address={curAddress} setAddress={setCurAddress}/>}/>
+              <Route path="/locationSelect" element={<LocationSelect address={curAddress} setAddress={setCurAddress}/>}/>
             </Routes>
           </BrowserRouter>
         </BaseProvider>
