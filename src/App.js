@@ -32,6 +32,7 @@ import Remaining15b from './Pages/Remaining15b/Remaining15b';
 import RateTip from './Pages/RateTipScreen/RateTip';
 
 const engine = new Styletron();
+const curAddress = "1515 3rd St";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           <BrowserRouter>
             <Routes>              
               <Route path="/" element={<HomeScreen />} />
-              <Route path="/datetime" element={<SelectDateTime address="1515 3rd St"/>} />
+              <Route path="/datetime" element={<SelectDateTime address={curAddress}/>} />
               <Route path="/describeHome" element={<DescribeHome/>} />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />
