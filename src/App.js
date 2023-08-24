@@ -41,7 +41,7 @@ function App() {
         <BaseProvider theme={LightTheme}>
           <BrowserRouter>
             <Routes>              
-              <Route path="/" element={<HomeScreen />} />
+              <Route path="/" element={<HomeScreen address={curAddress}/>} />
               <Route path="/datetime" element={<SelectDateTime address={curAddress}/>} />
               <Route path="/describeHome" element={<DescribeHome/>} />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
