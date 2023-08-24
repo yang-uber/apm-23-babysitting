@@ -68,7 +68,7 @@ function LocInputs({address}) {
       ></textarea>
         
       <textarea
-        placeholder="Describe the child. What do they like? Do they have any allergies?"
+        placeholder="Add instructions to help your babysitter find parking, etc."
         style={{
           position: 'absolute',
           top: '185px',  // Adjust these as necessary
