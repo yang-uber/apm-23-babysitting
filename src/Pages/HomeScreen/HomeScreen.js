@@ -11,6 +11,17 @@ function Home() {
     return (
         <div className='Home page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
+                <Button onClick={() => { navigate(`/newfeature`) }} className='to-ftux-screen-button'
+                style={{
+                    width: '100px',
+                    height: '40px',
+                    position: 'absolute',
+                    top: '29%', /* Adjust the top value as needed */
+                    left: '4%', /* Adjust the left value as needed */
+                    backgroundColor: 'transparent', // Set your desired background color
+                }}>
+                    {/*make sure navigate param matches path defined in App.js*/}
+                </Button>     
             </MockScreenshot>
         </div>
     );
