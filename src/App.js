@@ -27,6 +27,7 @@ function App() {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/newfeature" element={<NewFeature />} />
               <Route path="/datetime" element={<SelectDateTime address="1515 3rd St"/>} />
+              <Route path="/describeHome" />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
