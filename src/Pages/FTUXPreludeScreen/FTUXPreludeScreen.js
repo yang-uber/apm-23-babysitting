@@ -21,6 +21,19 @@ function FTUXPreludeScreen() {
                 }}>
                     {/*make sure navigate param matches path defined in App.js*/}
                 </Button>     
+
+                <Button className='back-button'
+                style={{
+                    width: '50px',
+                    height: '50px',
+                    position: 'absolute',
+                    top: '5%', /* Adjust the top value as needed */
+                    left: '2%', /* Adjust the left value as needed */
+                    backgroundColor: 'blue', // Set your desired background color
+                    opacity: '50%'
+                }}>
+                    {/*make sure navigate param matches path defined in App.js*/}
+                </Button>   
             </MockScreenshot>
         </div>
     );

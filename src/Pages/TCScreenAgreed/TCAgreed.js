@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, SIZE } from "baseui/button";
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './TCUnagreed_ss.png'; // an image is defined here using file path
+import Image from './TCAgreed_ss.png'; // an image is defined here using file path
 
-function TCUnagreed() {
+function TCAgreed() {
     let navigate = useNavigate();
     return (
         <div className='Home page'>
@@ -15,4 +15,4 @@ function TCUnagreed() {
     );
 }
 
-export default TCUnagreed;
+export default TCAgreed;
