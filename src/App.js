@@ -11,6 +11,7 @@ import {
 
 // import all pages
 import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
+import SelectDateTime from './Pages/SelectDateTime/SelectDateTime.js';
 import FTUXPreludeScreen from './Pages/FTUXPreludeScreen/FTUXPreludeScreen.js';
 import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
 
@@ -22,9 +23,10 @@ function App() {
       <StyletronProvider value={engine}>
         <BaseProvider theme={LightTheme}>
           <BrowserRouter>
-            <Routes>
+            <Routes>              
               <Route path="/" element={<HomeScreen />} />
-              <Route path="/homescreen" element={<HomeScreen />} />
+              <Route path="/datetime" element={<SelectDateTime address="1515 3rd St"/>} />
+              <Route path="/describeHome" />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />
             </Routes>
