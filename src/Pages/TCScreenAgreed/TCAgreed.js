@@ -46,7 +46,7 @@ function TCAgreed() {
             }}>
                 {/*make sure navigate param matches path defined in App.js*/}
             </Button>
-            <Button onClick={() => { navigate(`/datetime`) }} className='next-button'
+            <Button onClick={() => { navigate(`/locationSelect`) }} className='next-button'
             style={{
                 width: '340px',
                 height: '55px',

@@ -1,10 +1,10 @@
 import React from 'react';
-import screenshot from './edit_location.png';  // Change the path to your actual screenshot path
+import screenshot from './locationSelect.png';  // Change the path to your actual screenshot path
 import NextButton from '../../Components/MockScreenshot/NextButton/NextButton';
 import { useNavigate } from "react-router-dom";
-import LocInputs from './EditLocInputs.js';
+import FindLocation from './FindLocation.js';
 
-function LocationDetails({address, setAddress}) {
+function LocationSelect({address, setAddress}) {
     const navigate = useNavigate();
     const handleNextClick = () => {
         navigate("/childdetails");
@@ -14,11 +14,11 @@ function LocationDetails({address, setAddress}) {
     <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${screenshot})`, backgroundSize: 'cover' }}>
       
       <div style={{ position: 'absolute', top: '23%', left: '4%' }}>
-        <LocInputs address={address} setAddress={setAddress}/>
+        <FindLocation address={address} setAddress={setAddress} />
       </div>
       <NextButton onClick={handleNextClick} />
     </div>
   );
 }
 
-export default LocationDetails;
+export default LocationSelect;
