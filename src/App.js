@@ -45,7 +45,7 @@ function App() {
   const [curAddress, setCurAddress] = useState("1515 3rd St");
   const [startTime, setStartTime] = useState("4:00PM");
   const [endTime, setEndTime] = useState("5:00PM");
-  const [houseDesc, setHouseDesc] = useState("Home Description");
+  const [houseDesc, setHouseDesc] = useState("Brown Edwardian");
   const [address2, setAddress2] = useState("Apartment 4");
 
   return (

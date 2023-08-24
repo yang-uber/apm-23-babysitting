@@ -7,7 +7,7 @@ import LocInputs from './EditLocInputs.js';
 function LocationDetails({address, setAddress2}) {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/childdetails");
+        navigate("/describeHome");
     }
 
   return (
