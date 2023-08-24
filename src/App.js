@@ -58,7 +58,10 @@ function App() {
               <Route path="/tcgeneral" element={<TCGeneral />} />
               <Route path="/childdetails" element={<ParticipantDetails />} />
               <Route path="/addKid" element={<AddNewChild />} />
-              <Route path="/review" element={<Review />} />
+              <Route path="/review" element={<Review 
+                address={curAddress} startTime={startTime} endTime={endTime}
+                homeDesc={"Nice House"} kidsDesc={"Yang and Dominic"}
+                />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/activity" element={<Activity />} />
               <Route path="/reservation" element={<Reservation />} />
