@@ -32,7 +32,7 @@ function ParticipantDetails() {
           ))}
         </select>
       ))}
-      <NextButton onClick={() => { navigate(`/tcgeneral`) }} />
+      <NextButton onClick={() => { navigate(`/addkid`) }} />
       </div>
 
   );

@@ -8,7 +8,7 @@ import { Button } from "baseui/button";
 function AddNewChild() {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/home");
+        navigate("/review");
     }
 
   return (
