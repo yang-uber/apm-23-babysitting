@@ -68,7 +68,11 @@ function App() {
                 homeDesc={houseDesc} kidsDesc={"Yang and Dominic"}
                 address2={address2}
                 />} />
-              <Route path="/confirmation" element={<Confirmation />} />
+              <Route path="/confirmation" element={<Confirmation 
+              address={curAddress} startTime={startTime} endTime={endTime}
+              homeDesc={houseDesc} kidsDesc={"Yang and Dominic"}
+              address2={address2}
+              />} />
               <Route path="/activity" element={<Activity />} />
               <Route path="/reservation" element={<Reservation />} />
               <Route path="/arrivingnow" element={<ArrivingNow />} />
