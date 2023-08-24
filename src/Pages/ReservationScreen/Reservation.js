@@ -2,17 +2,16 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 import { Button, SIZE } from "baseui/button";
-import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './TCGeneral.png'; // an image is defined here using file path
-import NextButton from '../../Components/MockScreenshot/NextButton/NextButton.js';
+import Image from './Reservation_ss.png'; // an image is defined here using file path
 
-function TCGeneral() {
-    const navigate = useNavigate();
+function Reservation() {
+    let navigate = useNavigate();
     return (
         <div className='Home page'>
-        <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${Image})`, backgroundSize: 'cover' }}>
-        </div>
-        <Button onClick={() => { navigate(`/tcunagreed`) }} className='back-button'
+            <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${Image})`, backgroundSize: 'cover' }}>
+            </div>   
+
+            <Button onClick={() => { navigate(`/activity`) }} className='back-button'
             style={{
                 width: '50px',
                 height: '50px',
@@ -28,4 +27,4 @@ function TCGeneral() {
     );
 }
 
-export default TCGeneral;
+export default Reservation;

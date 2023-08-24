@@ -16,6 +16,10 @@ import FTUXPreludeScreen from './Pages/FTUXPreludeScreen/FTUXPreludeScreen.js';
 import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
 import TCAgreed from './Pages/TCScreenAgreed/TCAgreed.js';
 import TCGeneral from './Pages/TCGeneral/TCGeneral.js';
+import Review from './Pages/ReviewScreen/Review.js';
+import Confirmation from './Pages/ConfirmationScreen/Confirmation.js'
+import Activity from './Pages/ActivityHub/Activity';
+import Reservation from './Pages/ReservationScreen/Reservation';
 
 
 const engine = new Styletron();
@@ -34,6 +38,10 @@ function App() {
               <Route path="/tcunagreed" element={<TCUnagreed />} />
               <Route path="/tcagreed" element={<TCAgreed />} />
               <Route path="/tcgeneral" element={<TCGeneral />} />
+              <Route path="/review" element={<Review />} />
+              <Route path="/confirmation" element={<Confirmation />} />
+              <Route path="/activity" element={<Activity />} />
+              <Route path="/reservation" element={<Reservation />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
