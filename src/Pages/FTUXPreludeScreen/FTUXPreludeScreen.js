@@ -3,32 +3,34 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, SIZE } from "baseui/button";
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
-import Image from './HomeScreen_ss.png'; // an image is defined here using file path
+import Image from './FTUXPreludeScreen_ss.png'; // an image is defined here using file path
 
-function HomeScreen() {
+function FTUXPreludeScreen() {
     let navigate = useNavigate();
     return (
         <div className='Home page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
-                <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
+                <Button onClick={() => { navigate(`/tcunagreed`) }} className='to-tcunagreed-button'
                 style={{
-                    width: '100px',
-                    height: '40px',
+                    width: '340px',
+                    height: '55px',
                     position: 'absolute',
-                    top: '29%', /* Adjust the top value as needed */
-                    left: '4%', /* Adjust the left value as needed */
+                    top: '89%', /* Adjust the top value as needed */
+                    left: '5%', /* Adjust the left value as needed */
                     backgroundColor: 'transparent', // Set your desired background color
                 }}>
                     {/*make sure navigate param matches path defined in App.js*/}
                 </Button>     
-                <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
+
+                <Button className='back-button'
                 style={{
-                    width: '80px',
-                    height: '70px',
+                    width: '50px',
+                    height: '50px',
                     position: 'absolute',
-                    top: '48%', /* Adjust the top value as needed */
-                    left: '28%', /* Adjust the left value as needed */
-                    backgroundColor: 'transparent', // Set your desired background color
+                    top: '5%', /* Adjust the top value as needed */
+                    left: '2%', /* Adjust the left value as needed */
+                    backgroundColor: 'blue', // Set your desired background color
+                    opacity: '50%'
                 }}>
                     {/*make sure navigate param matches path defined in App.js*/}
                 </Button>   
@@ -37,4 +39,4 @@ function HomeScreen() {
     );
 }
 
-export default HomeScreen;
+export default FTUXPreludeScreen;
