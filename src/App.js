@@ -40,6 +40,9 @@ const engine = new Styletron();
 
 function App() {
   const [curAddress, setCurAddress] = useState("1515 3rd St");
+  const [startTime, setStartTime] = useState("4:00PM");
+  const [endTime, setEndTime] = useState("5:00PM");
+
   return (
     <>
       <StyletronProvider value={engine}>
@@ -47,7 +50,7 @@ function App() {
           <BrowserRouter>
             <Routes>              
               <Route path="/" element={<HomeScreen address={curAddress}/>} />
-              <Route path="/datetime" element={<SelectDateTime address={curAddress}/>} />
+              <Route path="/datetime" element={<SelectDateTime address={curAddress} setStartTime={setStartTime} setEndTime={setEndTime}/>} />
               <Route path="/describeHome" element={<DescribeHome/>} />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />

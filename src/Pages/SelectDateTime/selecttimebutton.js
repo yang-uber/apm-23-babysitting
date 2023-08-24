@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function SetDateTime({ address }) {
+function SetDateTime({ setTime }) {
   const [inputValue, setInputValue] = useState(""); // To keep track of input value
 
   
@@ -17,7 +17,10 @@ function SetDateTime({ address }) {
       <input 
         type="text"
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)} // Update the input value when user types
+        onChange={(e) => {
+          setInputValue(e.target.value);
+          setTime(e.target.value);
+        }} // Update the input value when user types
         placeholder="00:00 AM" // This will be the grayed-out placeholder text
         style={{
           display: 'flex',
