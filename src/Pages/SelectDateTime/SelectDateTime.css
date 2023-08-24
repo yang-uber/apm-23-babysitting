@@ -1,0 +1,10 @@
+.NewFeature .formatting-container {
+    margin-top: 300px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.NewFeature .formatting-container button {
+    margin-top: 20px;
+}

@@ -13,6 +13,7 @@ import {
 import Home from './Pages/Home/Home.js';
 import NewFeature from './Pages/NewFeature/NewFeature.js';
 import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
+import SelectDateTime from './Pages/SelectDateTime/SelectDateTime.js';
 
 const engine = new Styletron();
 
@@ -22,10 +23,10 @@ function App() {
       <StyletronProvider value={engine}>
         <BaseProvider theme={LightTheme}>
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
+            <Routes>              
+              <Route path="/" element={<HomeScreen />} />
               <Route path="/newfeature" element={<NewFeature />} />
-              <Route path="/homescreen" element={<HomeScreen />} />
+              <Route path="/datetime" element={<SelectDateTime address="1515 3rd St"/>} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
