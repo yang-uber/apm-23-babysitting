@@ -7,7 +7,7 @@ import KidInput from './kidinput';
 function AddNewChild() {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/childdetails");
+        navigate("/home");
     }
 
   return (
