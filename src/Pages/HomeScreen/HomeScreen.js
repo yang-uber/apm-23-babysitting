@@ -5,7 +5,7 @@ import { Button, SIZE } from "baseui/button";
 import MockScreenshot from '../../Components/MockScreenshot/MockScreenshot.js';
 import Image from './HomeScreen_ss.png'; // an image is defined here using file path
 
-function Home() {
+function HomeScreen() {
     let navigate = useNavigate();
     return (
         <div className='Home page'>
@@ -37,4 +37,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomeScreen;

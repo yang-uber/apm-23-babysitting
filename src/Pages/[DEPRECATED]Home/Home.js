@@ -11,10 +11,6 @@ function Home() {
     return (
         <div className='Home page'>
             <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
-                <Button size={SIZE.mini} onClick={() => { navigate(`/newfeature`) }}>
-                    {/*make sure navigate param matches path defined in App.js*/}
-                    Click me to go to new feature :)
-                </Button>
                 <Button size={SIZE.mini} onClick={() => { navigate(`/homescreen`) }}>
                     {/*make sure navigate param matches path defined in App.js*/}
                     Click me to go to the actual home screen
