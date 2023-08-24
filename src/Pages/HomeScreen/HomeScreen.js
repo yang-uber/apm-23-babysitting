@@ -9,30 +9,30 @@ function HomeScreen() {
     let navigate = useNavigate();
     return (
         <div className='Home page'>
-            <MockScreenshot imageUrl={Image}> {/*each instance of MockScreenshot needs an image url passed like this */}
-                <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
-                style={{
-                    width: '100px',
-                    height: '40px',
-                    position: 'absolute',
-                    top: '29%', /* Adjust the top value as needed */
-                    left: '4%', /* Adjust the left value as needed */
-                    backgroundColor: 'transparent', // Set your desired background color
-                }}>
-                    {/*make sure navigate param matches path defined in App.js*/}
-                </Button>     
-                <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
-                style={{
-                    width: '80px',
-                    height: '70px',
-                    position: 'absolute',
-                    top: '48%', /* Adjust the top value as needed */
-                    left: '28%', /* Adjust the left value as needed */
-                    backgroundColor: 'transparent', // Set your desired background color
-                }}>
-                    {/*make sure navigate param matches path defined in App.js*/}
-                </Button>   
-            </MockScreenshot>
+            <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${Image})`, backgroundSize: 'cover' }}>
+            </div>
+            <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
+            style={{
+                width: '100px',
+                height: '40px',
+                position: 'absolute',
+                top: '29%', /* Adjust the top value as needed */
+                left: '4%', /* Adjust the left value as needed */
+                backgroundColor: 'transparent', // Set your desired background color
+            }}>
+                {/*make sure navigate param matches path defined in App.js*/}
+            </Button>     
+            <Button onClick={() => { navigate(`/ftuxpreludescreen`) }} className='to-ftux-screen-button'
+            style={{
+                width: '80px',
+                height: '70px',
+                position: 'absolute',
+                top: '48%', /* Adjust the top value as needed */
+                left: '28%', /* Adjust the left value as needed */
+                backgroundColor: 'transparent', // Set your desired background color
+            }}>
+                {/*make sure navigate param matches path defined in App.js*/}
+            </Button>   
         </div>
     );
 }
