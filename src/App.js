@@ -13,6 +13,7 @@ import {
 import Home from './Pages/Home/Home.js';
 import NewFeature from './Pages/NewFeature/NewFeature.js';
 import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
+import FTUXPreludeScreen from './Pages/FTUXPreludeScreen/FTUXPreludeScreen.js';
 
 const engine = new Styletron();
 
@@ -26,6 +27,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/newfeature" element={<NewFeature />} />
               <Route path="/homescreen" element={<HomeScreen />} />
+              <Route path="/homescreen" element={<HomeScreen />} />
+              <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
