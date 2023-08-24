@@ -18,6 +18,7 @@ import DescribeHome from './Pages/DescribeHome/DescribeHome';
 import TCAgreed from './Pages/TCScreenAgreed/TCAgreed.js';
 import TCGeneral from './Pages/TCGeneral/TCGeneral.js';
 import ParticipantDetails from './Pages/ChildDetails/ChildDetails';
+import AddNewChild from './Pages/AddNewChild/AddNewChild';
 
 const engine = new Styletron();
 
@@ -36,6 +37,7 @@ function App() {
               <Route path="/tcagreed" element={<TCAgreed />} />
               <Route path="/tcgeneral" element={<TCGeneral />} />
               <Route path="/childdetails" element={<ParticipantDetails />} />
+              <Route path="/addKid" element={<AddNewChild />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
