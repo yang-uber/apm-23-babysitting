@@ -9,7 +9,7 @@ function FindLocation({address, setAddress}) {
     if (e.key === 'Enter') {
       setAddress(e.target.value);
       e.preventDefault(); // Prevents the default action (newline) when Enter is pressed
-      navigate(`/datetime`)
+      navigate(`/locationDetails`)
 
     }
   };

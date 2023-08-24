@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, SIZE } from "baseui/button";
 import Image from './Review_ss.png'; // an image is defined here using file path
 
-function Review({address, startTime, endTime, homeDesc, kidsDesc}) {
+function Review({address, startTime, endTime, homeDesc, kidsDesc, address2}) {
     let navigate = useNavigate();
     return (
         <div>
@@ -106,14 +106,14 @@ function Review({address, startTime, endTime, homeDesc, kidsDesc}) {
                         fontWeight: 'normal', 
                         color: 'gray',  // Or another color for less emphasis 
                     }}>
-                        Address Line 2
+                        {`${address2} `}
                     </div> 
                     {/* This is the subtitle */}
                     <div style={{ 
                         fontWeight: 'normal', 
                         color: 'gray',  // Or another color for less emphasis 
                     }}>
-                        Address Line 3
+                        San Francisco, California
                     </div> 
                 </div>
             </div>

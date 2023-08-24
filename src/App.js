@@ -46,6 +46,7 @@ function App() {
   const [startTime, setStartTime] = useState("4:00PM");
   const [endTime, setEndTime] = useState("5:00PM");
   const [houseDesc, setHouseDesc] = useState("Home Description");
+  const [address2, setAddress2] = useState("Apartment 4");
 
   return (
     <>
@@ -65,8 +66,13 @@ function App() {
               <Route path="/review" element={<Review 
                 address={curAddress} startTime={startTime} endTime={endTime}
                 homeDesc={houseDesc} kidsDesc={"Yang and Dominic"}
+                address2={address2}
                 />} />
-              <Route path="/confirmation" element={<Confirmation />} />
+              <Route path="/confirmation" element={<Confirmation 
+              address={curAddress} startTime={startTime} endTime={endTime}
+              homeDesc={houseDesc} kidsDesc={"Yang and Dominic"}
+              address2={address2}
+              />} />
               <Route path="/activity" element={<Activity />} />
               <Route path="/reservation" element={<Reservation />} />
               <Route path="/arrivingnow" element={<ArrivingNow />} />
@@ -76,7 +82,7 @@ function App() {
               <Route path="/remaining15" element={<Remaining15 />} />
               <Route path="/remaining15b" element={<Remaining15b />} />
               <Route path="/ratetip" element={<RateTip />} />
-              <Route path="/locationDetails" element={<LocationDetails address={curAddress} setAddress={setCurAddress}/>}/>
+              <Route path="/locationDetails" element={<LocationDetails address={curAddress} setAddress2={setAddress2}/>}/>
               <Route path="/locationSelect" element={<LocationSelect address={curAddress} setAddress={setCurAddress}/>}/>
               <Route path="/childdetails2" element={<ChildDetails2 />} />
               <Route path="/childdetails3" element={<ChildDetails3 />} />

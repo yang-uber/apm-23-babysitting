@@ -4,7 +4,7 @@ import NextButton from '../../Components/MockScreenshot/NextButton/NextButton';
 import { useNavigate } from "react-router-dom";
 import LocInputs from './EditLocInputs.js';
 
-function LocationDetails({address, setAddress}) {
+function LocationDetails({address, setAddress2}) {
     const navigate = useNavigate();
     const handleNextClick = () => {
         navigate("/childdetails");
@@ -14,7 +14,7 @@ function LocationDetails({address, setAddress}) {
     <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${screenshot})`, backgroundSize: 'cover' }}>
       
       <div style={{ position: 'absolute', top: '23%', left: '4%' }}>
-        <LocInputs address={address} setAddress={setAddress}/>
+        <LocInputs address={address} setAddress={setAddress2}/>
       </div>
       <NextButton onClick={handleNextClick} />
     </div>

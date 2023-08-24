@@ -7,7 +7,7 @@ import FindLocation from './FindLocation.js';
 function LocationSelect({address, setAddress}) {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/childdetails");
+        navigate("/locationDetails");
     }
 
   return (

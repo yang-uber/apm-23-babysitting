@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function LocInputs({address}) {
+function LocInputs({address, setAddress}) {
   const [inputValue, setInputValue] = useState(""); // To keep track of input value
 
   
@@ -32,6 +32,10 @@ function LocInputs({address}) {
       </label>
     <textarea
         placeholder="Apt / Suite / Floor"
+        onChange={(e) => {
+          setInputValue(e.target.value);
+          setAddress(e.target.value);
+        }}
         style={{
           position: 'absolute',
           top: '-15px',  // Adjust these as necessary
@@ -45,7 +49,8 @@ function LocInputs({address}) {
           border: 'none',
           whiteSpace: 'pre-wrap',
           wordWrap: 'break-word',
-          resize: 'none' // Disable user resizing
+          resize: 'none' // Disable user resizing,
+          
         }}
       ></textarea>
       <textarea
@@ -68,7 +73,7 @@ function LocInputs({address}) {
       ></textarea>
         
       <textarea
-        placeholder="Describe the child. What do they like? Do they have any allergies?"
+        placeholder="Add instructions to help your babysitter find parking, etc."
         style={{
           position: 'absolute',
           top: '185px',  // Adjust these as necessary
