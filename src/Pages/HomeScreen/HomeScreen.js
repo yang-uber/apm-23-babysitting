@@ -33,6 +33,19 @@ function HomeScreen() {
             }}>
                 {/*make sure navigate param matches path defined in App.js*/}
             </Button>   
+
+            <Button onClick={() => { navigate(`/activity`) }} className='activity-bottom' // CHANGE
+            style={{
+                width: '70px',
+                height: '60px',
+                position: 'absolute',
+                top: '89%', /* Adjust the top value as needed */
+                left: '55%', /* Adjust the left value as needed */
+                backgroundColor: 'blue', // Set your desired background color
+                opacity: '0%'
+            }}>
+                {/*make sure navigate param matches path defined in App.js*/}
+            </Button>     
         </div>
     );
 }
