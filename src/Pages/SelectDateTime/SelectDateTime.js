@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function SelectDateTime({ address, setStartTime, setEndTime }) {
     const navigate = useNavigate();
     const handleNextClick = () => {
-        navigate("/describeHome");
+        navigate("/childDetails");
     }
 
   return (
