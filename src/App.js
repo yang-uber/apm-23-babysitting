@@ -42,6 +42,7 @@ function App() {
   const [curAddress, setCurAddress] = useState("1515 3rd St");
   const [startTime, setStartTime] = useState("4:00PM");
   const [endTime, setEndTime] = useState("5:00PM");
+  const [houseDesc, setHouseDesc] = useState("Home Description");
 
   return (
     <>
@@ -51,7 +52,7 @@ function App() {
             <Routes>              
               <Route path="/" element={<HomeScreen address={curAddress}/>} />
               <Route path="/datetime" element={<SelectDateTime address={curAddress} setStartTime={setStartTime} setEndTime={setEndTime}/>} />
-              <Route path="/describeHome" element={<DescribeHome/>} />
+              <Route path="/describeHome" element={<DescribeHome setHouseDesc={setHouseDesc}/>} />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />
               <Route path="/tcagreed" element={<TCAgreed />} />
@@ -60,7 +61,7 @@ function App() {
               <Route path="/addKid" element={<AddNewChild />} />
               <Route path="/review" element={<Review 
                 address={curAddress} startTime={startTime} endTime={endTime}
-                homeDesc={"Nice House"} kidsDesc={"Yang and Dominic"}
+                homeDesc={houseDesc} kidsDesc={"Yang and Dominic"}
                 />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/activity" element={<Activity />} />
