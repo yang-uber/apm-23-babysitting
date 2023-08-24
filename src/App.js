@@ -14,6 +14,9 @@ import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
 import SelectDateTime from './Pages/SelectDateTime/SelectDateTime.js';
 import FTUXPreludeScreen from './Pages/FTUXPreludeScreen/FTUXPreludeScreen.js';
 import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
+import TCAgreed from './Pages/TCScreenAgreed/TCAgreed.js';
+import TCGeneral from './Pages/TCGeneral/TCGeneral.js';
+
 
 const engine = new Styletron();
 
@@ -29,6 +32,8 @@ function App() {
               <Route path="/describeHome" />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />
+              <Route path="/tcagreed" element={<TCAgreed />} />
+              <Route path="/tcgeneral" element={<TCGeneral />} />
             </Routes>
           </BrowserRouter>
         </BaseProvider>
