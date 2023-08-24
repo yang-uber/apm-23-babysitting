@@ -33,7 +33,7 @@ function KidInput() {
         }}
       ></textarea>
       <textarea
-        placeholder="Age"
+        placeholder="Date of Birth"
         style={{
           position: 'absolute',
           top: '80px',  // Adjust these as necessary
