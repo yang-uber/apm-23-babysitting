@@ -14,6 +14,7 @@ import HomeScreen from './Pages/HomeScreen/HomeScreen.js';
 import SelectDateTime from './Pages/SelectDateTime/SelectDateTime.js';
 import FTUXPreludeScreen from './Pages/FTUXPreludeScreen/FTUXPreludeScreen.js';
 import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
+import DescribeHome from './Pages/DescribeHome/DescribeHome';
 
 const engine = new Styletron();
 
@@ -26,7 +27,7 @@ function App() {
             <Routes>              
               <Route path="/" element={<HomeScreen />} />
               <Route path="/datetime" element={<SelectDateTime address="1515 3rd St"/>} />
-              <Route path="/describeHome" />
+              <Route path="/describeHome" element={<DescribeHome/>} />
               <Route path="/ftuxpreludescreen" element={<FTUXPreludeScreen />} />
               <Route path="/tcunagreed" element={<TCUnagreed />} />
             </Routes>
