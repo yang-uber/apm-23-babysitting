@@ -5,7 +5,7 @@ import NextButton from '../../Components/MockScreenshot/NextButton/NextButton';
 import { Select } from 'baseui/select';
 import { useNavigate } from "react-router-dom";
 
-function SelectDateTime({ address }) {
+function SelectDateTime({ address, setStartTime, setEndTime }) {
     const navigate = useNavigate();
     const handleNextClick = () => {
         navigate("/describeHome");
@@ -19,11 +19,11 @@ function SelectDateTime({ address }) {
         </div>
       
       <div style={{ position: 'absolute', top: '40%', left: '4%' }}>
-        <TimeButton address={address} />
+        <TimeButton setTime={setStartTime} />
       </div>
 
       <div style={{ position: 'absolute', top: '56%', left: '4%' }}>
-        <TimeButton />
+        <TimeButton setTime={setEndTime}/>
       </div>
       <NextButton onClick={handleNextClick} />
     </div>

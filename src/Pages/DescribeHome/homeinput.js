@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function HomeInput() {
+function HomeInput({setHouseDesc}) {
   const [inputValue, setInputValue] = useState(""); // To keep track of input value
 
   
@@ -33,6 +33,10 @@ function HomeInput() {
           whiteSpace: 'pre-wrap',
           wordWrap: 'break-word',
           resize: 'none' // Disable user resizing
+        }}
+        onChange={(e) => {
+          setInputValue(e.target.value);
+          setHouseDesc(e.target.value);
         }}
       ></textarea>
     </div>

@@ -4,7 +4,7 @@ import NextButton from '../../Components/MockScreenshot/NextButton/NextButton';
 import { useNavigate } from "react-router-dom";
 import HomeInput from './homeinput';
 
-function DescribeHome() {
+function DescribeHome({setHouseDesc}) {
     const navigate = useNavigate();
     const handleNextClick = () => {
         navigate("/childdetails");
@@ -14,7 +14,7 @@ function DescribeHome() {
     <div style={{ position: 'relative', width: '375px', height: '812px', backgroundImage: `url(${screenshot})`, backgroundSize: 'cover' }}>
       
       <div style={{ position: 'absolute', top: '23%', left: '4%' }}>
-        <HomeInput  />
+        <HomeInput  setHouseDesc={setHouseDesc}/>
       </div>
       <NextButton onClick={handleNextClick} />
     </div>
