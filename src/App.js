@@ -17,6 +17,8 @@ import TCUnagreed from './Pages/TCScreenUnagreed/TCUnagreed.js';
 import DescribeHome from './Pages/DescribeHome/DescribeHome';
 import TCAgreed from './Pages/TCScreenAgreed/TCAgreed.js';
 import TCGeneral from './Pages/TCGeneral/TCGeneral.js';
+import ParticipantDetails from './Pages/ChildDetails/ChildDetails';
+import AddNewChild from './Pages/AddNewChild/AddNewChild';
 import Review from './Pages/ReviewScreen/Review.js';
 import Confirmation from './Pages/ConfirmationScreen/Confirmation.js'
 import Activity from './Pages/ActivityHub/Activity.js';
@@ -45,6 +47,8 @@ function App() {
               <Route path="/tcunagreed" element={<TCUnagreed />} />
               <Route path="/tcagreed" element={<TCAgreed />} />
               <Route path="/tcgeneral" element={<TCGeneral />} />
+              <Route path="/childdetails" element={<ParticipantDetails />} />
+              <Route path="/addKid" element={<AddNewChild />} />
               <Route path="/review" element={<Review />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/activity" element={<Activity />} />
